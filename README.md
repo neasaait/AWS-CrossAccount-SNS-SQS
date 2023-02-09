@@ -53,9 +53,11 @@ Enter subject and message and publish message to SNS.
 
 Login to ***Account-B*** -> SQS -> ***MyTestQueue*** -> Send ad Receive messages -> Poll for messages<br/>
 You should see the message in queue.
-
-
+<br/><br/>
 
 
 ## References
-[AWS Reference doc](https://docs.aws.amazon.com/sns/latest/dg/sns-send-message-to-sqs-cross-account.html)
+* [AWS Reference doc](https://docs.aws.amazon.com/sns/latest/dg/sns-send-message-to-sqs-cross-account.html)
+* [AWS blog](https://aws.amazon.com/blogs/compute/cross-account-integration-with-amazon-sns/)
+
+
