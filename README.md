@@ -1,7 +1,7 @@
 # SQS subscribe to cross account SNS
 
 ## Youtube video link
-[![AWS-CrossAccount-SNS-SQS](https://img.youtube.com/vi/videoId/0.jpg)](https://www.youtube.com/watch?v=videoId)
+[![AWS-CrossAccount-SNS-SQS](https://img.youtube.com/vi/HIr9S7mAV6g/0.jpg)](https://www.youtube.com/watch?v=HIr9S7mAV6g)
 
 ## Use case
 Assume we have 2 AWS accounts ***Account-A*** (112233445566) and ***Account-B*** (223344556677)
@@ -17,11 +17,8 @@ This demo is using root user of ***Account-A*** and ***Account-B***.
 #### :point_right: Step 1: Create SNS topic and SQS queue
 
 Login to ***Account-A*** and create a SNS topic ***MyTestTopic*** with default properties.
-Sample SNS topic ARN: arn:aws:sns:us-east-1:112233445566:***MyTestTopic***
-
-
 Login to ***Account-B*** and create a SSQS ***MyTestQueue*** with default properties.
-SAmple SQS queue ARN: arn:aws:sqs:us-east-1:223344556677:***MyTestQueue***
+
 
 
 #### :point_right: Step 2: Update SNS policy to allow subscription to other account SQS
@@ -45,7 +42,7 @@ In step 2, we setup permission for SQS to subscribe. In this step, we are actual
 
 Login to ***Account-B*** account -> SQS -> Select Queue ***MyTestQueue*** -> Subscribe to Amazon SNS topic.<br/>
 Enter SNS topic ARN e.g.: arn:aws:sns:us-east-1:112233445566:MyTestTopic <br/>
-Watch [youtube video](https://www.youtube.com/watch?v=videoId) for details.
+Watch [youtube video](https://www.youtube.com/watch?v=HIr9S7mAV6g) for details.
 
 #### :point_right: Step 4: Test subscription
 Login to ***Account-A*** -> SNS topic -> ***MyTestTopic*** ->  Publish Message <br/>
